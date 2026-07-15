@@ -150,6 +150,12 @@ button, input, textarea { font: inherit; }
   font-size: 12px;
   line-height: 1.7;
 }
+.store-intro .store-sample-link {
+  margin-top: 14px;
+}
+.store-intro .store-sample-link .cta-button {
+  color: var(--fg);
+}
 .store-cart {
   display: flex;
   justify-content: flex-end;

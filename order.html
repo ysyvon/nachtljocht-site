@@ -29,7 +29,7 @@
       <section class="store-intro" aria-labelledby="store-title">
         <h2 class="panel-title" id="store-title">Order</h2>
         <p>Purchase current and archival volumes, or subscribe to future volumes of nachtljocht.</p>
-        <p class="store-sample-link"><a class="cta-button" href="https://nachtljocht.com/sample-volume-one.html">Read a Sample</a></p>
+        <p class="store-sample-link"><a class="cta-button" href="https://nachtljocht.com/sample-volume-one.html" target="_blank" rel="noreferrer">Read a Sample</a></p>
       </section>
 
       <div class="store-cart" aria-label="Shopping bag">
@@ -46,6 +46,12 @@
       </footer>
     </main>
 
+    <script>
+      window.ec = window.ec || {};
+      window.ec.storefront = window.ec.storefront || {};
+      window.ec.storefront.product_details_show_product_photo_zoom = false;
+      window.ec.storefront.product_details_additional_images_preview_on_click = false;
+    </script>
     <script data-cfasync="false" src="https://app.ecwid.com/script.js?139267004&amp;data_platform=code&amp;data_date=2026-07-14" charset="utf-8"></script>
     <script>
       Ecwid.init();

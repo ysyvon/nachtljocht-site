@@ -646,8 +646,14 @@ button, input, textarea { font: inherit; }
 
 
 .contributor-profile {
-  max-width: 760px;
+  max-width: 840px;
   margin: 0 auto;
+}
+.site:has(.contributor-profile) {
+  width: min(calc(100vw - 40px), 840px);
+}
+.detail-frame:has(.contributor-profile) {
+  width: min(100%, 840px);
 }
 .contributor-profile-main {
   display: grid;

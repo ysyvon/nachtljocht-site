@@ -550,6 +550,12 @@ button, input, textarea { font: inherit; }
   width: 100%;
   border: none;
 }
+@media (prefers-color-scheme: dark) {
+  .nachtljocht-submit-form iframe,
+  .nachtljocht-contact-form iframe {
+    filter: invert(0.92) hue-rotate(180deg);
+  }
+}
 .manifesto-image {
   display: block;
   width: 100%;

@@ -212,6 +212,102 @@ button, input, textarea { font: inherit; }
 .store-frame {
   width: min(100%, 1100px);
 }
+.order-landing {
+  width: min(calc(100% - 40px), 780px);
+  margin: 32px auto 0;
+  display: grid;
+  grid-template-columns: minmax(210px, 0.82fr) minmax(300px, 1.18fr);
+  gap: clamp(30px, 6vw, 64px);
+  align-items: center;
+}
+.order-landing[hidden],
+.order-store[hidden] {
+  display: none;
+}
+.order-cover-wrap {
+  padding: 12px;
+  border: 1px solid var(--line);
+  background: var(--panel-bg);
+  box-shadow: var(--panel-shadow);
+}
+.order-cover {
+  width: 100%;
+  height: auto;
+}
+.order-copy {
+  padding: 12px 0;
+}
+.order-kicker {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.order-copy h2 {
+  margin: 0 0 20px;
+  font-size: clamp(24px, 4vw, 34px);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.order-description {
+  margin: 0 0 26px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.order-actions {
+  display: grid;
+  gap: 10px;
+}
+.order-button {
+  min-height: 54px;
+  padding: 0 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1px solid var(--line-strong);
+  background: var(--button-bg);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: background 160ms ease, color 160ms ease;
+}
+.order-button:hover {
+  background: var(--button-hover);
+}
+.order-button--primary {
+  color: var(--bg);
+  background: var(--fg);
+}
+.order-button--primary:hover {
+  color: var(--bg);
+  background: var(--link-hover);
+}
+.order-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+}
+.order-store {
+  margin-top: 24px;
+}
+.order-back-link {
+  display: inline-block;
+  margin: 0 0 14px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-transform: uppercase;
+}
 .store-intro {
   margin: 0 auto 10px;
   max-width: 620px;
@@ -264,6 +360,28 @@ button, input, textarea { font: inherit; }
 }
 .ec-size .ec-store .details-gallery__picture {
   cursor: default !important;
+}
+@media (max-width: 640px) {
+  .order-landing {
+    width: min(calc(100% - 40px), 420px);
+    margin-top: 26px;
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .order-cover-wrap {
+    width: min(76vw, 300px);
+    margin: 0 auto;
+  }
+  .order-copy {
+    padding: 0;
+    text-align: center;
+  }
+  .order-description {
+    text-align: left;
+  }
+  .order-note {
+    text-align: center;
+  }
 }
 .preorder-link {
   font-weight: 700;

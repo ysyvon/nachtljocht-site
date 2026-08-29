@@ -4,24 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Order Nachtljocht | Literary Journal Volumes</title>
-    <meta name="description" content="Order current and archival volumes of Nachtljocht or subscribe to future issues of the literary journal.">
+    <meta name="description" content="Order the print or digital edition of Nachtljocht Volume I.">
     <link rel="canonical" href="https://nachtljocht.com/order.html">
     <meta property="og:site_name" content="Nachtljocht">
     <meta property="og:title" content="Order Nachtljocht | Literary Journal Volumes">
-    <meta property="og:description" content="Order current and archival volumes of Nachtljocht or subscribe to future issues of the literary journal.">
+    <meta property="og:description" content="Order the print or digital edition of Nachtljocht Volume I.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nachtljocht.com/order.html">
-    <meta property="og:image" content="https://nachtljocht.com/nachtljocht-press-engraving-logo.png">
-    <meta property="og:image:secure_url" content="https://nachtljocht.com/nachtljocht-press-engraving-logo.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="2000">
-    <meta property="og:image:height" content="2000">
-    <meta property="og:image:alt" content="Nachtljocht Press engraving logo">
+    <meta property="og:image" content="https://nachtljocht.com/archive/volume-one/nachtljocht-volume-one-cover.jpg">
+    <meta property="og:image:secure_url" content="https://nachtljocht.com/archive/volume-one/nachtljocht-volume-one-cover.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="947">
+    <meta property="og:image:height" content="1427">
+    <meta property="og:image:alt" content="Nachtljocht Volume I - Autumn 2026 cover">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Order Nachtljocht | Literary Journal Volumes">
-    <meta name="twitter:description" content="Order current and archival volumes of Nachtljocht or subscribe to future issues of the literary journal.">
-    <meta name="twitter:image" content="https://nachtljocht.com/nachtljocht-press-engraving-logo.png">
-    <meta name="twitter:image:alt" content="Nachtljocht Press engraving logo">
+    <meta name="twitter:description" content="Order the print or digital edition of Nachtljocht Volume I.">
+    <meta name="twitter:image" content="https://nachtljocht.com/archive/volume-one/nachtljocht-volume-one-cover.jpg">
+    <meta name="twitter:image:alt" content="Nachtljocht Volume I - Autumn 2026 cover">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -29,7 +29,7 @@
         "@id": "https://nachtljocht.com/order.html#webpage",
         "url": "https://nachtljocht.com/order.html",
         "name": "Order Nachtljocht | Literary Journal Volumes",
-        "description": "Order current and archival volumes of Nachtljocht or subscribe to future issues of the literary journal.",
+        "description": "Order the print or digital edition of Nachtljocht Volume I.",
         "isPartOf": {
           "@id": "https://nachtljocht.com/#website"
         },
@@ -60,17 +60,53 @@
         <a class="tab" href="./index.html#contact">Contact</a>
       </nav>
 
-      <section class="store-intro" aria-labelledby="store-title">
-        <h2 class="panel-title" id="store-title">Order</h2>
-        <p>Purchase current and archival volumes, or subscribe to future volumes of nachtljocht.</p>
+      <section class="order-landing" aria-labelledby="order-title" data-order-landing>
+        <div class="order-cover-wrap">
+          <img
+            class="order-cover"
+            src="./archive/volume-one/nachtljocht-volume-one-cover.jpg"
+            alt="Nachtljocht Volume I - Autumn 2026 cover"
+            draggable="false"
+          >
+        </div>
+        <div class="order-copy">
+          <p class="order-kicker">Volume I · Autumn 2026</p>
+          <h2 id="order-title">Choose your edition</h2>
+          <p class="order-description">
+            The first volume of Nachtljocht brings together fiction and short plays
+            from fifteen writers in a substantial edition made to be read, kept,
+            and returned to.
+          </p>
+          <div class="order-actions" aria-label="Volume I editions">
+            <a
+              class="order-button order-button--primary"
+              href="https://www.lulu.com/shop/artemy-kalinovsky-and-danielle-ellis-and-david-lewis-and-diana-parrilla/nachtljocht-volume-i/paperback/product-p64n7d4.html?page=1&amp;pageSize=4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Order the print edition</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="order-button"
+              href="./order.html#!/Nachtljocht-Volume-I-Digital-Edition/p/848344117"
+            >
+              <span>Order the digital edition</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <p class="order-note">Print orders are fulfilled by Lulu. Digital orders remain on Nachtljocht.</p>
+        </div>
       </section>
 
-      <div class="store-cart" aria-label="Shopping bag">
-        <div class="ec-cart-widget"></div>
-      </div>
-
-      <section class="panel store-body" aria-label="Nachtljocht store">
-        <div id="my-store-139267004"></div>
+      <section class="order-store" aria-label="Nachtljocht digital store" data-order-store hidden>
+        <a class="order-back-link" href="./order.html">← Back to editions</a>
+        <div class="store-cart" aria-label="Shopping bag">
+          <div class="ec-cart-widget"></div>
+        </div>
+        <div class="panel store-body">
+          <div id="my-store-139267004"></div>
+        </div>
       </section>
 
       <footer class="site-footer">
@@ -81,21 +117,49 @@
     </main>
 
     <script>
-      window.ec = window.ec || {};
-      window.ec.storefront = window.ec.storefront || {};
-      window.ec.storefront.product_details_show_product_photo_zoom = false;
-      window.ec.storefront.product_details_additional_images_preview_on_click = false;
-    </script>
-    <script data-cfasync="false" src="https://app.ecwid.com/script.js?139267004&amp;data_platform=code&amp;data_date=2026-07-14" charset="utf-8"></script>
-    <script>
-      Ecwid.init();
-      xProductBrowser(
-        "categoriesPerRow=3",
-        "views=grid(20,3) list(60) table(60)",
-        "categoryView=grid",
-        "searchView=list",
-        "id=my-store-139267004"
-      );
+      (() => {
+        const landing = document.querySelector("[data-order-landing]");
+        const store = document.querySelector("[data-order-store]");
+        let storeLoaded = false;
+
+        const isStoreRoute = () => window.location.hash.startsWith("#!/");
+
+        const loadStore = () => {
+          if (storeLoaded) return;
+          storeLoaded = true;
+
+          window.ec = window.ec || {};
+          window.ec.storefront = window.ec.storefront || {};
+          window.ec.storefront.product_details_show_product_photo_zoom = false;
+          window.ec.storefront.product_details_additional_images_preview_on_click = false;
+
+          const script = document.createElement("script");
+          script.src = "https://app.ecwid.com/script.js?139267004&data_platform=code&data_date=2026-07-14";
+          script.charset = "utf-8";
+          script.dataset.cfasync = "false";
+          script.addEventListener("load", () => {
+            Ecwid.init();
+            xProductBrowser(
+              "categoriesPerRow=3",
+              "views=grid(20,3) list(60) table(60)",
+              "categoryView=grid",
+              "searchView=list",
+              "id=my-store-139267004"
+            );
+          });
+          document.body.appendChild(script);
+        };
+
+        const syncOrderView = () => {
+          const showStore = isStoreRoute();
+          landing.hidden = showStore;
+          store.hidden = !showStore;
+          if (showStore) loadStore();
+        };
+
+        window.addEventListener("hashchange", syncOrderView);
+        syncOrderView();
+      })();
     </script>
     <script src="./no-context-menu.js"></script>
   </body>

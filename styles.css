@@ -240,7 +240,7 @@ button, input, textarea { font: inherit; }
 .order-kicker {
   margin: 0 0 14px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -910,6 +910,7 @@ button, input, textarea { font: inherit; }
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
+.author-work-meta a,
 .author-work-read a,
 .contributor-profile-bio-links a {
   text-decoration: underline;

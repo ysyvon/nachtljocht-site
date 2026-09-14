@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Somewhere Warm, Close to the Ocean | Nachtljocht</title>
+    <meta name="description" content="Somewhere Warm, Close to the Ocean by Artemy M. Kalinovsky, featured in Nachtljocht Volume I.">
+    <link rel="canonical" href="https://nachtljocht.com/featured-somewhere-warm-close-to-the-ocean.html">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body class="detail-page story-page">
+    <main class="site site-detail">
+      <section class="detail-frame story-frame">
+        <a class="back-link" href="./index.html#home">← Back to Featured Works</a>
+        <header class="story-header">
+          <h1 class="detail-title story-title">Somewhere Warm, Close to the Ocean</h1>
+          <p class="story-author"><a href="./contributors/artemy-kalinovsky.html">Artemy M. Kalinovsky</a></p>
+        </header>
+        <section class="story-reader" aria-label="Read Somewhere Warm, Close to the Ocean">
+          <div class="story-reader-placeholder"><p>The flipbook reader for this story will appear here soon.</p><p class="story-reader-path">The editor can add the PDF at <code>assets/featured-somewhere-warm-close-to-the-ocean.pdf</code>.</p></div>
+          <iframe data-pdf-src="./assets/featured-somewhere-warm-close-to-the-ocean.pdf" title="Somewhere Warm, Close to the Ocean PDF reader" hidden></iframe>
+        </section>
+        <footer class="story-footer">
+          <p><a href="./contributors/artemy-kalinovsky.html">About Artemy M. Kalinovsky</a></p>
+          <p><a href="./order.html">Order Nachtljocht Volume I</a></p>
+        </footer>
+      </section>
+    </main>
+    <script src="./no-context-menu.js"></script>
+    <script>document.querySelectorAll('[data-pdf-src]').forEach(function (frame) { fetch(frame.dataset.pdfSrc, { method: 'HEAD' }).then(function (response) { if (!response.ok) return; frame.src = frame.dataset.pdfSrc; frame.hidden = false; frame.previousElementSibling.hidden = true; }).catch(function () {}); });</script>
+  </body>
+</html>

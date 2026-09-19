@@ -441,8 +441,8 @@ button, input, textarea { font: inherit; }
 .featured-work-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(18px, 4vw, 34px); }
 .featured-work-card { min-width: 0; text-align: center; }
 .featured-work-image-link { display: block; margin-bottom: 18px; overflow: hidden; background: var(--photo-frame-bg); }
-.featured-work-image { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: saturate(0.82); transition: filter 180ms ease, transform 180ms ease; }
-.featured-work-image-link:hover .featured-work-image, .featured-work-image-link:focus-visible .featured-work-image { filter: saturate(1); transform: scale(1.02); }
+.featured-work-image { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: grayscale(100%); transition: filter 180ms ease, transform 180ms ease; }
+.featured-work-image-link:hover .featured-work-image, .featured-work-image-link:focus-visible .featured-work-image { filter: grayscale(100%); transform: scale(1.02); }
 .featured-work-title {
   margin: 0 auto 6px;
   max-width: 22ch;

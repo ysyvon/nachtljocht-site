@@ -504,6 +504,29 @@ button, input, textarea { font: inherit; }
   text-transform: uppercase;
 }
 .panel-text .submission-heading:first-child { margin-top: 0; }
+.panel-text .submission-action {
+  margin: 20px 0 14px;
+}
+.submission-button {
+  min-height: 52px;
+  padding: 0 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1px solid var(--line-strong);
+  background: var(--fg);
+  color: var(--bg);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: background 160ms ease, color 160ms ease;
+}
+.submission-button:hover {
+  background: var(--link-hover);
+  color: var(--bg);
+}
 .panel-title {
   margin: 0 auto 18px;
   font-size: 14px;

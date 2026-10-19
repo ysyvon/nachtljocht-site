@@ -481,6 +481,7 @@ button, input, textarea { font: inherit; }
 .story-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; padding: 22px 4px 0; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; }
 .story-footer p { margin: 0; }
 .story-footer a { text-decoration: underline; text-underline-offset: 3px; }
+.story-footer .kofi-support { flex-basis: 100%; }
 @media (max-width: 560px) {
   .featured-work-list { grid-template-columns: 1fr; gap: 38px; }
   .story-header { padding-inline: 8px; }
@@ -601,6 +602,7 @@ button, input, textarea { font: inherit; }
 .site-footer p { margin: 0 0 8px; }
 .site-footer p:last-child { margin-bottom: 0; }
 .site-footer a { text-decoration: underline; text-underline-offset: 2px; }
+.kofi-support { margin-bottom: 16px; text-align: center; letter-spacing: normal; text-transform: none; }
 .newsletter-popup {
   position: fixed;
   inset: 0;

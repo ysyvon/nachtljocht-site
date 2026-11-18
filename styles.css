@@ -657,26 +657,9 @@ button, input, textarea { font: inherit; }
   font-size: 13px;
   line-height: 1.6;
 }
-.newsletter-form {
+.newsletter-subscribe {
   display: grid;
-  gap: 10px;
-}
-.newsletter-form label {
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-.newsletter-form input[type="email"] {
-  width: 100%;
-  min-height: 42px;
-  padding: 0 12px;
-  border: 1px solid var(--line-strong);
-  border-radius: 0;
-  background: var(--bg);
-  color: var(--fg);
-  font: inherit;
-}
-.newsletter-form input[type="submit"] {
+  place-items: center;
   min-height: 42px;
   border: 1px solid var(--line-strong);
   border-radius: 0;
@@ -685,20 +668,11 @@ button, input, textarea { font: inherit; }
   font: inherit;
   font-size: 12px;
   letter-spacing: 0.16em;
+  text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 }
-.newsletter-form input[type="submit"]:hover { opacity: 0.88; }
-.newsletter-powered {
-  margin: 0;
-  color: var(--muted);
-  font-size: 10px;
-}
-.newsletter-powered a {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
+.newsletter-subscribe:hover { opacity: 0.88; }
 @media (prefers-color-scheme: dark) {
   .newsletter-backdrop { background: rgba(0, 0, 0, 0.48); }
 }
